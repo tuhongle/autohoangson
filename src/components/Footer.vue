@@ -1,9 +1,9 @@
 <template>
-  <div class="container-lg bg-dark p-5">
+  <div class="container-lg p-5">
     <div class="row g-3">
-        <div class="col-md-4 h-100">
-            <div class="col-content text-light p-4">
-                <h2 class="mb-4">DỊCH VỤ</h2>
+        <div class="col-md-4">
+            <div class="col-content text-light p-4 h-100">
+                <h3 class="mb-4">DỊCH VỤ</h3>
                 <div class="content">
                     <a href="" class="d-block text-decoration-none border-bottom border-1 border-secondary mb-3 pb-2">Đồng sơn</a>
                     <a href="" class="d-block text-decoration-none border-bottom border-1 border-secondary mb-3 pb-2">Detailing</a>
@@ -13,27 +13,33 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 h-100">
-            <div class="col-content text-light p-4 text-center">
+        <div class="col-md-4">
+            <div class="col-content text-light p-4 text-center h-100">
                 <div class="logo">
                     <img src="../assets/logo-autohoangson.png" alt="logo" class="img-fluid" width="100">
                 </div>
                 <div class="line-break bg-light mx-auto w-25 my-3 rounded" style="height: 4px;"></div>
-                <a href="#" class="company-name text-decoration-none">CÔNG TY TMDV AUTO HOÀNG SƠN</a>
-            </div>
-        </div>
-        <div class="col-md-4 h-100">
-            <div class="col-content text-light p-4">
-                <h2 class="mb-4">THỜI GIAN LÀM VIỆC</h2>
-                <div class="content">
-                    <a href="" class="d-block text-decoration-none border-bottom border-1 border-secondary mb-3 pb-2">Đồng sơn</a>
-                    <a href="" class="d-block text-decoration-none border-bottom border-1 border-secondary mb-3 pb-2">Detailing</a>
-                    <a href="" class="d-block text-decoration-none border-bottom border-1 border-secondary mb-3 pb-2">Khung gầm</a>
-                    <a href="" class="d-block text-decoration-none border-bottom border-1 border-secondary mb-3 pb-2">Điện máy</a>
-                    <a href="" class="d-block text-decoration-none border-bottom border-1 border-secondary mb-3 pb-2">Đồ chơi</a>
+                <a href="#" class="d-inline-block company-name text-decoration-none mb-3">CÔNG TY TMDV AUTO HOÀNG SƠN</a>
+                <div class="mx-auto">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100083319938486&tabs&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 </div>
             </div>
         </div>
+        <div class="col-md-4">
+            <div class="col-content text-light p-4 h-100">
+                <h3 class="mb-5">THỜI GIAN LÀM VIỆC</h3>
+                <p class="px-2 mb-4 fw-bold">Làm việc tất cả các ngày trong tuần</p>
+                <ul class="px-4 list-unstyled">
+                    <li class="pb-2 mb-3 border-bottom border-1 border-secondary"><b>Sáng:</b> 7h30 đến 12h</li>
+                    <li class="pb-2 border-bottom border-1 border-secondary"><b>Chiều:</b> 13h đến 17h</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="copyright container-lg px-5 text-start">
+    <div class="row p-3">
+        <p>Copyright 2023 AUTO HOÀNG SƠN by <span class="text-decoration-underline">TUHONGLE</span>. Allright reserved.</p>
     </div>
   </div>
 </template>
