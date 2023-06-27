@@ -1,2 +1,71 @@
 @import 'bootstrap/scss/bootstrap.scss';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
+@import "bootstrap-icons/font/bootstrap-icons.scss";
+
+nav.navbar {
+    a.nav-link {
+        position: relative;
+        &::after {
+            transition: all 0.2s linear;
+            position: absolute;
+            content: '';
+            border-bottom: 5px solid white;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            height: 0;
+            width: 40px;
+            left: 50%;
+            bottom: 0px;
+            transform: translate(-50%, 50%) ;
+            opacity: 0;
+        }
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        li.nav-item {
+            border-bottom: 1px solid rgba(33, 37, 41, 0.5);
+            a.nav-link { 
+                color: #212529 !important;
+                &::after {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+            .dropdown-menu {
+                border: none;
+            }
+        }
+    }
+}
+
+footer {
+    .col-md-4 {
+        .col-content {
+            background-color: #373a3d !important;
+            border-top: 15px solid #5780C1;
+
+            .content {
+                a {
+                    color: #9695ac !important;
+                    &:hover {
+                        color: white !important;
+                    }
+                }
+            }
+
+            a.company-name {
+                font-size: 0.875rem;
+                color: #9695ac;
+                transition: all 0.2s linear;
+                &:hover {
+                font-weight: bold;
+                color: white;
+                }
+            }
+        }
+    }
+}
