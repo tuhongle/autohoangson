@@ -39,10 +39,54 @@
                 </div>
             </div>
           </swiper-slide>
-          <swiper-slide>Slide 2</swiper-slide>
-          <swiper-slide>Slide 3</swiper-slide>
-          <swiper-slide>Slide 4</swiper-slide>
-          <swiper-slide>Slide 5</swiper-slide>
+          <swiper-slide>
+            <div class="card border-0">
+                <img src="https://images.hdqwalls.com/download/retrowave-car-4k-fr-1280x720.jpg" alt="" class="card-img-top">
+                <div class="card-body py-3">
+                    <h5 class="card-title mb-4 fw-bolder">DETAILING</h5>
+                    <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?</p>
+                    <button class="btn btn-primary">
+                        <a href="#" class="text-light text-decoration-none">Xem thêm</a>
+                    </button>
+                </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card border-0">
+                <img src="https://images.hdqwalls.com/download/retrowave-car-4k-fr-1280x720.jpg" alt="" class="card-img-top">
+                <div class="card-body py-3">
+                    <h5 class="card-title mb-4 fw-bolder">KHUNG GẦM</h5>
+                    <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?</p>
+                    <button class="btn btn-primary">
+                        <a href="#" class="text-light text-decoration-none">Xem thêm</a>
+                    </button>
+                </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card border-0">
+                <img src="https://images.hdqwalls.com/download/retrowave-car-4k-fr-1280x720.jpg" alt="" class="card-img-top">
+                <div class="card-body py-3">
+                    <h5 class="card-title mb-4 fw-bolder">ĐIỆN MÁY</h5>
+                    <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?</p>
+                    <button class="btn btn-primary">
+                        <a href="#" class="text-light text-decoration-none">Xem thêm</a>
+                    </button>
+                </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card border-0">
+                <img src="https://images.hdqwalls.com/download/retrowave-car-4k-fr-1280x720.jpg" alt="" class="card-img-top">
+                <div class="card-body py-3">
+                    <h5 class="card-title mb-4 fw-bolder">ĐỒ CHƠI</h5>
+                    <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?</p>
+                    <button class="btn btn-primary">
+                        <a href="#" class="text-light text-decoration-none">Xem thêm</a>
+                    </button>
+                </div>
+            </div>
+          </swiper-slide>
         </swiper>
     </div>
   </template>
