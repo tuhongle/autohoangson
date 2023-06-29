@@ -28,8 +28,8 @@
               <div class="dropdown-menu bg-dark-subtle text-light pb-2 pt-0 py-md-0 px-3 px-md-0 text-start text-md-center">
                 <a href="" class="dropdown-item py-2 border-bottom border-1 border-dark-subtle">ĐỒNG SƠN</a>
                 <a href="" class="dropdown-item py-2 border-bottom border-1 border-dark-subtle">DETAILING</a>
-                <a href="" class="dropdown-item py-2 border-bottom border-1 border-dark-subtle">KHUNG GẦM</a>
-                <a href="" class="dropdown-item py-2 border-bottom border-1 border-dark-subtle">ĐIỆN MÁY</a>
+                <a href="" class="dropdown-item py-2 border-bottom border-1 border-dark-subtle">MÁY GẦM</a>
+                <a href="" class="dropdown-item py-2 border-bottom border-1 border-dark-subtle">ĐIỆN ÔTÔ</a>
                 <a href="" class="dropdown-item py-2 border-bottom border-1 border-dark-subtle">ĐỒ CHƠI</a>
               </div>
             </li>
@@ -40,7 +40,7 @@
               <a href="" class="nav-link px-3 py-3">TUYỂN DỤNG</a>
             </li>
             <li class="nav-item me-2">
-              <a href="" class="nav-link px-3 py-3">LIÊN HỆ</a>
+              <a href="/contact.html" class="nav-link px-3 py-3">LIÊN HỆ</a>
             </li>
           </ul>
         </div>

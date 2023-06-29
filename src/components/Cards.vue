@@ -3,9 +3,12 @@
         <swiper
           :slidesPerView="1"
           :spaceBetween="10"
-          :navigation="{
-            clickable: true,
+          :autoplay="{
+            delay: 2500,
+            disableOnInteraction: false,
           }"
+          :navigation="true"
+          :loop="true"
           :breakpoints="{
             '640': {
               slidesPerView: 2,
@@ -13,74 +16,26 @@
             },
             '768': {
               slidesPerView: 3,
-              spaceBetween: 40,
+              spaceBetween: 20,
             },
             '992': {
               slidesPerView: 4,
-              spaceBetween: 40,
+              spaceBetween: 20,
             },
             '1024': {
               slidesPerView: 5,
-              spaceBetween: 50,
+              spaceBetween: 20,
             },
           }"
           :modules="modules"
           class="mySwiper"
         >
-          <swiper-slide>
+          <swiper-slide v-for="card in cards" :key="card.id">
             <div class="card border-0">
-                <img src="https://images.hdqwalls.com/download/retrowave-car-4k-fr-1280x720.jpg" alt="" class="card-img-top">
+                <img :src="card.src" :alt="card.alt" class="card-img-top">
                 <div class="card-body py-3">
-                    <h5 class="card-title mb-4 fw-bolder">ĐỒNG SƠN</h5>
-                    <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?</p>
-                    <button class="btn btn-primary">
-                        <a href="#" class="text-light text-decoration-none">Xem thêm</a>
-                    </button>
-                </div>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="card border-0">
-                <img src="https://images.hdqwalls.com/download/retrowave-car-4k-fr-1280x720.jpg" alt="" class="card-img-top">
-                <div class="card-body py-3">
-                    <h5 class="card-title mb-4 fw-bolder">DETAILING</h5>
-                    <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?</p>
-                    <button class="btn btn-primary">
-                        <a href="#" class="text-light text-decoration-none">Xem thêm</a>
-                    </button>
-                </div>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="card border-0">
-                <img src="https://images.hdqwalls.com/download/retrowave-car-4k-fr-1280x720.jpg" alt="" class="card-img-top">
-                <div class="card-body py-3">
-                    <h5 class="card-title mb-4 fw-bolder">KHUNG GẦM</h5>
-                    <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?</p>
-                    <button class="btn btn-primary">
-                        <a href="#" class="text-light text-decoration-none">Xem thêm</a>
-                    </button>
-                </div>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="card border-0">
-                <img src="https://images.hdqwalls.com/download/retrowave-car-4k-fr-1280x720.jpg" alt="" class="card-img-top">
-                <div class="card-body py-3">
-                    <h5 class="card-title mb-4 fw-bolder">ĐIỆN MÁY</h5>
-                    <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?</p>
-                    <button class="btn btn-primary">
-                        <a href="#" class="text-light text-decoration-none">Xem thêm</a>
-                    </button>
-                </div>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="card border-0">
-                <img src="https://images.hdqwalls.com/download/retrowave-car-4k-fr-1280x720.jpg" alt="" class="card-img-top">
-                <div class="card-body py-3">
-                    <h5 class="card-title mb-4 fw-bolder">ĐỒ CHƠI</h5>
-                    <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?</p>
+                    <h5 class="card-title mb-4 fw-bolder">{{ card.title }}</h5>
+                    <p class="small">{{ card.text }}</p>
                     <button class="btn btn-primary">
                         <a href="#" class="text-light text-decoration-none">Xem thêm</a>
                     </button>
@@ -91,28 +46,46 @@
     </div>
   </template>
 
-  <script>
-    // Import Swiper Vue.js components
-    import { Swiper, SwiperSlide } from 'swiper/vue';
-  
-    // Import Swiper styles
-    import 'swiper/css';
-  
-    import 'swiper/css/pagination';
-  
-    // import required modules
-    import { Pagination } from 'swiper';
-  
-    export default {
-      components: {
-        Swiper,
-        SwiperSlide,
-      },
-      setup() {
-        return {
-          modules: [Pagination],
-        };
-      },
+<script>
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
+// Import Swiper styles
+import 'swiper/css';
+
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper';
+import card1 from '../assets/cards/card-1.jpg'
+import card2 from '../assets/cards/card-2.jpg'
+import card3 from '../assets/cards/card-3.jpg'
+import card4 from '../assets/cards/card-4.jpg'
+import card5 from '../assets/cards/card-5.jpg'
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Autoplay, Pagination, Navigation],
     };
-  </script>
+  },
+  
+  data() {
+    return {
+      cards: [
+        {src: card1, alt: "1", title: "ĐỒNG SƠN", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?"},
+        {src: card2, alt: "2", title: "DETAILING", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?"},
+        {src: card3, alt: "3", title: "MÁY GẦM", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?"},
+        {src: card4, alt: "4", title: "ĐIỆN ÔTÔ", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?"},
+        {src: card5, alt: "5", title: "ĐỒ CHƠI", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?"},
+      ],
+    }
+  }
+};
+</script>
   

@@ -1,8 +1,8 @@
 <template>
     <div class="container-fluid px-0">
-        <div id="heroImage" class="carousel slide">
+        <div id="heroImage" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item" :class="{'active': image.active}" v-for="image in images" :key="image.src">
+                <div class="carousel-item" data-bs-interval="2000" :class="{'active': image.active}" v-for="image in images" :key="image.src">
                     <img :src="image.src" class="d-block w-100" :alt="image.alt">
                 </div>
             </div>

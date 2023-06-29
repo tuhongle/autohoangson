@@ -94,17 +94,117 @@ section.cards {
     .card {
         background-color: #EFF0F2;
         border-radius: 30px 0 0;
+        transition: all 0.2s linear;
+        overflow: hidden;
+        &:hover {
+            border-radius: 0;
+        }
         img {
             width: 100%;
             aspect-ratio: 1 / 1;
             object-fit: cover;
             border-radius: 30px 0;
+            transition: all 0.2s linear;
+            &:hover {
+                border-radius: 0 0 20px 0;
+                transform: scale(1.05);
+                cursor: pointer;
+            }
         }
         .card-body {
+            h5 {
+                &:hover {
+                    color: $primary;
+                    cursor: pointer;
+                }
+            };
             p {
                 font-size: 0.8rem;
                 letter-spacing: 1px;
+            };
+            button {
+                transition: all 0.2s linear;
+                &:hover {
+                    background-color: white;
+                    border: 1px solid $primary;
+                    a {
+                        color: $primary !important;
+                    }
+                }
             }
         }
+    }
+}
+
+section.caption {
+    blockquote {
+        letter-spacing: 7px;
+    }
+}
+
+section.garage {
+    img {
+        transition: all 0.3s linear;
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}
+
+section.insurance {
+    .container-lg {
+        background: url(./background/background-4.jpg) no-repeat center center / cover;
+        transition: all 0.2s linear;
+
+        button {
+            &:hover {
+                background-color: $primary;
+                color: white;
+            }
+        }
+    }
+}
+
+section.background {
+    .backgroundInsert {
+        height: 100px;
+        background-color: $dark;
+    }
+    .container-fluid {
+        height: 40vh;
+        background: url('../assets/background/background-1.jpg') no-repeat center center / cover;
+        h1 {
+            color: white;
+            border: 1px solid $primary;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px 40px;
+        }
+    }
+}
+
+section.addressInfo {
+    .card-body {
+        background-color: #373a3d;
+
+        li {
+            transition: all 0.2s linear;
+            
+            i { 
+                height: 100%;
+                aspect-ratio: 1 / 1;
+                background-color: #3E414B;
+                transition: all 0.2s linear;
+            }
+            
+            &:hover {
+                background-color: $primary;
+    
+                i {
+                    background-color: $primary;
+                }
+            }
+        }
+
     }
 }

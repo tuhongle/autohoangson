@@ -16,7 +16,7 @@
         <div class="col-md-4">
             <div class="col-content text-light p-4 text-center h-100">
                 <div class="logo">
-                    <img src="../assets/logo-autohoangson.png" alt="logo" class="img-fluid" width="100">
+                    <a href="#"><img src="../assets/logo-autohoangson.png" alt="logo" class="img-fluid" width="100"></a>
                 </div>
                 <div class="line-break bg-light mx-auto w-25 my-3 rounded" style="height: 4px;"></div>
                 <a href="#" class="d-inline-block company-name text-decoration-none mb-3">CÔNG TY TMDV AUTO HOÀNG SƠN</a>
@@ -39,7 +39,7 @@
   </div>
   <div class="copyright container-lg px-5 text-start">
     <div class="row p-3">
-        <p>Copyright 2023 AUTO HOÀNG SƠN by <span class="text-decoration-underline">TUHONGLE</span>. Allright reserved.</p>
+        <p>Copyright 2023 AUTO HOÀNG SƠN by <span class="text-decoration-underline">TUHONGLE</span>. All rights reserved.</p>
     </div>
   </div>
 </template>
