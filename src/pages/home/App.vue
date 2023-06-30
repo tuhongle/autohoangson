@@ -61,8 +61,8 @@
           <div class="col-12 col-md-6 mb-3 mb-md-0">
             <h2 class="fw-bold">TƯ VẤN BẢO HIỂM</h2>
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae numquam nisi alias quidem, voluptatum unde. Excepturi voluptates culpa iusto, ullam ipsum at a cumque ad ab voluptate aut rem suscipit eveniet molestiae nostrum provident, sit dolor quam quod ratione tempora. Corrupti minima sunt dicta totam. Vitae dignissimos veritatis similique temporibus ad nostrum accusantium hic debitis ducimus fuga sunt possimus ullam quo, corporis dolorum optio. Dolor, expedita amet? Assumenda nemo quod fuga nihil, eius molestiae adipisci commodi incidunt id. Accusamus ab consequuntur quasi autem dolore in eius eligendi dolorem, tempore pariatur blanditiis! Similique cupiditate accusamus fugit architecto provident error aspernatur vitae!</p>
-            <button class="btn btn-light border-0 me-3">XEM THÊM</button>
-            <button class="btn btn-light border-0">LIÊN HỆ</button>
+            <button class="btn btn-light border-0 me-3"><a href="/insurance.html" class="text-decoration-none text-dark">XEM THÊM</a></button>
+            <button class="btn btn-light border-0"><a href="/contact.html" class="text-decoration-none text-dark">LIÊN HỆ</a></button>
           </div>
           <div class="col-12 col-md-6">
             <img src="../../assets/background/background-1.jpg" alt="" class="img-fluid">
@@ -72,7 +72,7 @@
     </section>
     <section class="customers">
       <div class="container py-5 text-center">
-      <h1 class="mb-5" data-bs-toggle="modal" data-bs-target="#register">ĐỐI TÁC - BẢO HIỂM LIÊN KIẾT</h1>
+      <h1 class="mb-5">ĐỐI TÁC - BẢO HIỂM LIÊN KIẾT</h1>
       <CustomerLogos />
       </div>
     </section>
@@ -81,7 +81,9 @@
     <Footer />
   </footer>
   <!-- Modal -->
-  <Modal />
+  <teleport to="#modals">
+    <Modal />
+  </teleport>
 </template>
 
 <script>

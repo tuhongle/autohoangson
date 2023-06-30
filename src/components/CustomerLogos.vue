@@ -2,7 +2,8 @@
     <div class="row">
         <swiper
           :slidesPerView="2"
-          :spaceBetween="10"
+          :spaceBetween="20"
+          :grabCursor="true"
           :autoplay="{
             delay: 2500,
             disableOnInteraction: false,
@@ -10,7 +11,7 @@
           :pagination="{
             dynamicBullets: true,
             clickable: true,
-            }"
+          }"
           :loop="true"
           :breakpoints="{
             '768': {

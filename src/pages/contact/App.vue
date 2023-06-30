@@ -52,7 +52,7 @@
                   </li>
                   <li class="small card-text border border-1 border-secondary d-flex align-items-center">
                     <i class="bi bi-house-check fs-5 me-1 px-4 d-flex align-items-center justify-content-center"></i>
-                    <div class="ps-3 d-inline-block">08 Bùi Công Trừng - Đông Thạnh - Hóc Môn - HCM</div>
+                    <div class="ps-3 d-inline-block pe-3">08 Bùi Công Trừng - Đông Thạnh - Hóc Môn - HCM</div>
                   </li>
                   <li class="small card-text border border-1 border-secondary d-flex align-items-center">
                     <i class="bi bi-browser-chrome fs-5 me-1 px-4 d-flex align-items-center justify-content-center"></i>

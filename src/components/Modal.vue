@@ -1,10 +1,10 @@
 <template>
-  <div class="modal fade shadow" id="register" tabindex="-1" aria-labelledby="registerLabel" aria-hidden="true" :class="{'show': show}">
+  <div class="modal fade shadow" id="register" tabindex="-1" aria-labelledby="registerLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5 mx-auto" id="registerLabel">ĐĂNG KÝ DỊCH VỤ</h1>
-        <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close" @click="show = !show"></button>
+        <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <form action="">
@@ -13,10 +13,10 @@
             <div class="row row-cols-3">
                 <div class="col mb-3" v-for="service in services" :key="service.id">
                     <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" :id="service.id">
-                    <label class="form-check-label" :for="service.id">
-                        {{ service.label }}
-                    </label>
+                        <input class="form-check-input" type="checkbox" value="" :id="service.id">
+                        <label class="form-check-label" :for="service.id">
+                            {{ service.label }}
+                        </label>
                     </div>
                 </div>
             </div>
@@ -67,12 +67,15 @@
 </template>
 
 <script>
+import * as bootstrap from 'bootstrap'
+
 export default {
     name: "Modal",
     data() {
         return {
+            modal: null,
             tele: '0999999999',
-            show: true,
+            showModal: true,
             services: [
                 {id: "dong-son", label: "Đồng sơn"},
                 {id: "detailing", label: "Detailing"},
@@ -80,6 +83,15 @@ export default {
                 {id: "dien-oto", label: "Điện ôtô"},
                 {id: "do-choi", label: "Đồ chơi"},
             ]
+        }
+    },
+    mounted() {
+        this.modal = new bootstrap.Modal('#register');
+        this.modal.show();
+    },
+    methods: {
+        closeModal() {
+            this.modal.hide();
         }
     }
 }

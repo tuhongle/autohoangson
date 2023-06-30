@@ -18,10 +18,10 @@
             <a href="/index.html" class="nav-link px-3 py-3" aria-current="page">TRANG CHỦ</a>
             </li>
             <li class="nav-item me-2">
-              <a href="" class="nav-link px-3 py-3">GIỚI THIỆU</a>
+              <a href="/auto-hoang-son-trung-tam-cham-soc-oto-chuyen-nghiep.html" class="nav-link px-3 py-3">GIỚI THIỆU</a>
             </li>
             <li class="nav-item me-2 dropdown">
-              <a href="" class="nav-link px-3 py-3 d-flex" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a href="/dich-vu.html" class="nav-link px-3 py-3 d-flex" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 DỊCH VỤ
                 <i class="bi bi-chevron-down ms-md-0 ps-md-2 ms-auto"></i>
               </a>
@@ -34,10 +34,10 @@
               </div>
             </li>
             <li class="nav-item me-2">
-              <a href="" class="nav-link px-3 py-3">BẢO HIỂM</a>
+              <a href="/insurance.html" class="nav-link px-3 py-3">BẢO HIỂM</a>
             </li>
             <li class="nav-item me-2">
-              <a href="" class="nav-link px-3 py-3">TUYỂN DỤNG</a>
+              <a href="/tuyen-dung.html" class="nav-link px-3 py-3">TUYỂN DỤNG</a>
             </li>
             <li class="nav-item me-2">
               <a href="/contact.html" class="nav-link px-3 py-3">LIÊN HỆ</a>
