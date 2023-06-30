@@ -32,7 +32,7 @@
         <div class="row">
           <div class="col-12 col-lg-6 mb-4 mb-lg-0" v-for="garage in garages" :key="garage.id">
             <div class="row h-100 border-1 border-bottom mx-2 pb-2">
-              <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+              <div class="col-12 col-sm-6 mb-3 mb-sm-0 overflow-hidden">
                 <img :src="garage.src" :alt="garage.alt" class="img-fluid">
               </div>
               <div class="col-12 col-sm-6 text-start">
@@ -72,15 +72,16 @@
     </section>
     <section class="customers">
       <div class="container py-5 text-center">
-      <h1 class="mb-5">ĐỐI TÁC - BẢO HIỂM LIÊN KIẾT</h1>
+      <h1 class="mb-5" data-bs-toggle="modal" data-bs-target="#register">ĐỐI TÁC - BẢO HIỂM LIÊN KIẾT</h1>
       <CustomerLogos />
       </div>
     </section>
-
   </main>
   <footer class="bg-dark">
     <Footer />
   </footer>
+  <!-- Modal -->
+  <Modal />
 </template>
 
 <script>
@@ -89,6 +90,7 @@ import Footer from '../../components/Footer.vue'
 import Carousel from '../../components/Carousel.vue'
 import Cards from '../../components/Cards.vue'
 import CustomerLogos from '../../components/CustomerLogos.vue'
+import Modal from '../../components/Modal.vue'
 
 import icon1 from '../../assets/iconsCaption/icon-1.png'
 import icon2 from '../../assets/iconsCaption/icon-2.png'
@@ -101,7 +103,7 @@ import garage2 from '../../assets/garages/garage-2.jpg'
 export default {
   name: 'App',
   components: {
-    Navbar, Footer, Carousel, Cards, CustomerLogos
+    Navbar, Footer, Carousel, Cards, CustomerLogos, Modal
   },
   data() {
     return {

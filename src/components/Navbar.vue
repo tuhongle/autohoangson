@@ -15,7 +15,7 @@
         <div class="offcanvas-body px-0">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item me-2">
-            <a href="" class="nav-link px-3 py-3" aria-current="page">TRANG CHỦ</a>
+            <a href="/index.html" class="nav-link px-3 py-3" aria-current="page">TRANG CHỦ</a>
             </li>
             <li class="nav-item me-2">
               <a href="" class="nav-link px-3 py-3">GIỚI THIỆU</a>

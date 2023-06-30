@@ -12,6 +12,12 @@ $theme-colors: map-merge($theme-colors, (
 $bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
 @import "bootstrap-icons/font/bootstrap-icons.scss";
 
+#register {
+    &.show {
+        display: block;
+    }
+}
+
 nav.navbar {
     a.nav-link {
         position: relative;
