@@ -77,7 +77,7 @@
       </div>
     </section>
   </main>
-  <div id="plugins" class="position-fixed opacity-50">
+  <div id="plugins" class="position-fixed z-1">
     <Plugins />
   </div>
   <footer class="bg-dark">
