@@ -77,6 +77,9 @@
       </div>
     </section>
   </main>
+  <div id="plugins" class="position-fixed opacity-50">
+    <Plugins />
+  </div>
   <footer class="bg-dark">
     <Footer />
   </footer>
@@ -93,6 +96,7 @@ import Carousel from '../../components/Carousel.vue'
 import Cards from '../../components/Cards.vue'
 import CustomerLogos from '../../components/CustomerLogos.vue'
 import Modal from '../../components/Modal.vue'
+import Plugins from '../../components/Plugins.vue'
 
 import icon1 from '../../assets/iconsCaption/icon-1.png'
 import icon2 from '../../assets/iconsCaption/icon-2.png'
@@ -105,7 +109,7 @@ import garage2 from '../../assets/garages/garage-2.jpg'
 export default {
   name: 'App',
   components: {
-    Navbar, Footer, Carousel, Cards, CustomerLogos, Modal
+    Navbar, Footer, Carousel, Cards, CustomerLogos, Modal, Plugins
   },
   data() {
     return {
@@ -129,5 +133,6 @@ export default {
   font-family: Roboto, Lato, Poppins, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
 </style>

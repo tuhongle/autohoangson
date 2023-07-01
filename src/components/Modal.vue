@@ -7,13 +7,13 @@
         <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form action="">
+        <form @submit.prevent="sendEmail">
             <h5 class="mt-4">1. Dịch vụ cho xe (*)</h5>
             <p class="fst-italic ms-4">Có thể chọn nhiều phương án</p>
             <div class="row row-cols-3">
                 <div class="col mb-3" v-for="service in services" :key="service.id">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" :id="service.id">
+                        <input class="form-check-input" type="checkbox" name="service" :value="service.label" :id="service.id" v-model="selectedServices">
                         <label class="form-check-label" :for="service.id">
                             {{ service.label }}
                         </label>
@@ -24,39 +24,40 @@
             <p class="fst-italic ms-4">Vui lòng để lại thông tin</p>
             <div class="row row-cols-2 mb-4">
                 <div class="col mb-3">
-                    <input type="text" class="form-control shadow-none" name="Họ tên" placeholder="Họ và tên *" required>
+                    <input type="text" class="form-control shadow-none" name="name" v-model="name" placeholder="Họ và tên *" required>
                 </div>
                 <div class="col mb-3">
-                    <input type="tel" class="form-control shadow-none" name="Số điện thoại" placeholder="Điện thoại *" required>
+                    <input type="tel" class="form-control shadow-none" name="telephone" v-model="telephone" placeholder="Điện thoại *" required>
                 </div>
                 <div class="col mb-3">
-                    <input type="text" class="form-control shadow-none" name="Thương hiệu xe" placeholder="Thương hiệu xe">
+                    <input type="text" class="form-control shadow-none" name="carType" v-model="carType" placeholder="Thương hiệu xe">
                 </div>
                 <div class="col mb-3">
-                    <input type="date" class="form-control shadow-none" name="Ngày hẹn">
+                    <input type="date" class="form-control shadow-none" name="date" v-model="date">
                 </div>
                 <div class="col">
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" name="Dịch vụ" id="insurance">
+                        <input type="radio" class="form-check-input" id="insurance" value="bảo hiểm" v-model="serviceType">
                         <label for="insurance" class="form-check-label">Dịch vụ bảo hiểm</label>
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" name="Dịch vụ" id="cash">
+                        <input type="radio" class="form-check-input" id="cash" value="tiền mặt" v-model="serviceType">
                         <label for="cash" class="form-check-label">Dịch vụ tiền mặt</label>
                     </div>
                 </div>
             </div>
-            <div class="row mb-4">
+            <div class="row mb-3">
                 <div class="col-12">
-                    <textarea class="form-control shadow-none" name="yêu cầu" cols="30" rows="5" placeholder="Yêu cầu của khách hàng..."></textarea>
+                    <textarea class="form-control shadow-none" name="message" v-model="message" cols="30" rows="3" placeholder="Yêu cầu của khách hàng..."></textarea>
                 </div>
             </div>
-            <div class="row mb-4">
+            <div class="row mb-3">
                 <div class="col-12 text-center">
-                    <button class="btn btn-primary text-light px-4 py-2 mb-3">ĐĂNG KÝ</button>
+                    <button class="btn btn-primary text-light px-4 py-2 mb-3" type="submit">ĐĂNG KÝ</button>
                     <p class="lead">Hotline tư vấn: {{ tele }}</p>
+                    <p class="text-success bg-success-subtle border border-1 border-1 py-2" v-if="success">Cám ơn quý khách. Chúng tôi sẽ liên lạc với bạn sớm nhất!</p>
                 </div>
             </div>
         </form>
@@ -68,30 +69,66 @@
 
 <script>
 import * as bootstrap from 'bootstrap'
+import emailjs from '@emailjs/browser';
 
 export default {
     name: "Modal",
     data() {
         return {
             modal: null,
+            success: true,
             tele: '0999999999',
             showModal: true,
+            mailParams: {},
             services: [
                 {id: "dong-son", label: "Đồng sơn"},
                 {id: "detailing", label: "Detailing"},
                 {id: "may-gam", label: "Máy gầm"},
                 {id: "dien-oto", label: "Điện ôtô"},
                 {id: "do-choi", label: "Đồ chơi"},
-            ]
+            ],
+            selectedServices: [],
+            name: '',
+            telephone: null,
+            carType: '',
+            date: '',
+            message: '',
+            serviceType: 'bảo hiểm',
         }
     },
     mounted() {
         this.modal = new bootstrap.Modal('#register');
         this.modal.show();
+        this.success = false;
     },
     methods: {
-        closeModal() {
-            this.modal.hide();
+        sendEmail() {
+            this.mailParams = {
+                service: this.selectedServices,
+                name: this.name,
+                telephone: this.telephone,
+                carType: this.carType,
+                date: this.date,
+                serviceType: this.serviceType,
+                message: this.message,
+            };
+            emailjs.send('service_ydbnr89','template_s8r68rm', this.mailParams, 'U4yZ5_-S_d864S08N')
+                .then((response) => {
+                    this.success = true;
+                    this.selectedServices = [];
+                    this.name = '';
+                    this.telephone = null;
+                    this.carType = '';
+                    this.date = '';
+                    this.serviceType = 'bảo hiểm';
+                    this.message = '';
+                    console.log('SUCCESS!', response.status, response.text);
+                    // setTimeout(() => {
+                    //     this.modal.hide();
+                    // }, 3000);
+                }, (err) => {
+                    console.log('FAILED...', err);
+                });
         }
     }
 }
