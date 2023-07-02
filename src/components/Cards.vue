@@ -10,21 +10,17 @@
           :navigation="true"
           :loop="true"
           :breakpoints="{
-            '640': {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
             '768': {
-              slidesPerView: 3,
+              slidesPerView: 2,
               spaceBetween: 20,
             },
             '992': {
               slidesPerView: 4,
-              spaceBetween: 20,
+              spaceBetween: 30,
             },
             '1024': {
               slidesPerView: 5,
-              spaceBetween: 20,
+              spaceBetween: 30,
             },
           }"
           :modules="modules"
@@ -32,7 +28,7 @@
         >
           <swiper-slide v-for="card in cards" :key="card.id">
             <div class="card border-0">
-                <img :src="card.src" :alt="card.alt" class="card-img-top">
+                <img :src="card.src" :alt="card.alt" class="card-img-top mb-3">
                 <div class="card-body py-3">
                     <h5 class="card-title mb-4 fw-bolder">{{ card.title }}</h5>
                     <p class="small">{{ card.text }}</p>

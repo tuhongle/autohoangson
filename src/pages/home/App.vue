@@ -60,7 +60,7 @@
         <div class="row">
           <div class="col-12 col-md-6 mb-3 mb-md-0">
             <h2 class="fw-bold">TƯ VẤN BẢO HIỂM</h2>
-            <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae numquam nisi alias quidem, voluptatum unde. Excepturi voluptates culpa iusto, ullam ipsum at a cumque ad ab voluptate aut rem suscipit eveniet molestiae nostrum provident, sit dolor quam quod ratione tempora. Corrupti minima sunt dicta totam. Vitae dignissimos veritatis similique temporibus ad nostrum accusantium hic debitis ducimus fuga sunt possimus ullam quo, corporis dolorum optio. Dolor, expedita amet? Assumenda nemo quod fuga nihil, eius molestiae adipisci commodi incidunt id. Accusamus ab consequuntur quasi autem dolore in eius eligendi dolorem, tempore pariatur blanditiis! Similique cupiditate accusamus fugit architecto provident error aspernatur vitae!</p>
+            <p class="lh-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae numquam nisi alias quidem, voluptatum unde. Excepturi voluptates culpa iusto, ullam ipsum at a cumque ad ab voluptate aut rem suscipit eveniet molestiae nostrum provident, sit dolor quam quod ratione tempora. Corrupti minima sunt dicta totam. Vitae dignissimos veritatis similique temporibus ad nostrum accusantium hic debitis ducimus fuga sunt possimus ullam quo, corporis dolorum optio. Dolor, expedita amet? Assumenda nemo quod fuga nihil, eius molestiae adipisci commodi incidunt id. Accusamus ab consequuntur quasi autem dolore in eius eligendi dolorem, tempore pariatur blanditiis! Similique cupiditate accusamus fugit architecto provident error aspernatur vitae!</p>
             <button class="btn btn-light border-0 me-3"><a href="/insurance.html" class="text-decoration-none text-dark">XEM THÊM</a></button>
             <button class="btn btn-light border-0"><a href="/contact.html" class="text-decoration-none text-dark">LIÊN HỆ</a></button>
           </div>
@@ -136,5 +136,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+}
+
+#modals {
+  max-width: 600px !important;
 }
 </style>
