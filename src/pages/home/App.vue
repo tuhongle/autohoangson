@@ -65,7 +65,7 @@
             <button class="btn btn-light border-0"><a href="/contact.html" class="text-decoration-none text-dark">LIÊN HỆ</a></button>
           </div>
           <div class="col-12 col-md-6">
-            <img src="../../assets/background/background-1.jpg" alt="" class="img-fluid h-100 object-fit-cover">
+            <img src="../../assets/background/background-1.jpg" alt="" class="img-fluid">
           </div>
         </div>
       </div>
