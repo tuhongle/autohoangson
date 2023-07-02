@@ -65,7 +65,7 @@
             <button class="btn btn-light border-0"><a href="/contact.html" class="text-decoration-none text-dark">LIÊN HỆ</a></button>
           </div>
           <div class="col-12 col-md-6">
-            <img src="../../assets/background/background-1.jpg" alt="" class="img-fluid">
+            <img src="../../assets/background/background-1.jpg" alt="" class="img-fluid h-100 object-fit-cover">
           </div>
         </div>
       </div>
@@ -77,9 +77,11 @@
       </div>
     </section>
   </main>
+  <!-- Plugins -->
   <div id="plugins" class="position-fixed z-1">
     <Plugins />
   </div>
+  <!-- Footer -->
   <footer class="bg-dark">
     <Footer />
   </footer>
