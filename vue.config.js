@@ -24,6 +24,34 @@ module.exports = defineConfig({
             title: 'Dịch vụ',
             chunks: ['chunk-vendors', 'chunk-common', 'service']
         },
+        dongson: {
+            entry: 'src/pages/service/dongson/main.js',
+            template: 'public/index.html',
+            filename: 'dich-vu/dong-son-oto.html',
+            title: 'Auto Hoàng Sơn - Đồng sơn',
+            chunks: ['chunk-vendors', 'chunk-common', 'dongson']
+        },
+        detailing: {
+            entry: 'src/pages/service/detailing/main.js',
+            template: 'public/index.html',
+            filename: 'dich-vu/detailing-oto.html',
+            title: 'Auto Hoàng Sơn - Detailing',
+            chunks: ['chunk-vendors', 'chunk-common', 'detailing']
+        },
+        maygamdien: {
+            entry: 'src/pages/service/maygamdien/main.js',
+            template: 'public/index.html',
+            filename: 'dich-vu/may-gam-dien-oto.html',
+            title: 'Auto Hoàng Sơn - Máy gầm điện',
+            chunks: ['chunk-vendors', 'chunk-common', 'maygamdien']
+        },
+        dochoi: {
+            entry: 'src/pages/service/dochoi/main.js',
+            template: 'public/index.html',
+            filename: 'dich-vu/do-choi-oto.html',
+            title: 'Auto Hoàng Sơn - Đồ chơi',
+            chunks: ['chunk-vendors', 'chunk-common', 'dochoi']
+        }, 
         insurance: {
             entry: 'src/pages/insurance/main.js',
             template: 'public/index.html',
@@ -44,7 +72,6 @@ module.exports = defineConfig({
             filename: 'contact.html',
             title: 'Liên hệ',
             chunks: ['chunk-vendors', 'chunk-common', 'contact']
-        },
-        
+        },  
     },
 })

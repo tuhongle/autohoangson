@@ -77,7 +77,7 @@ export default {
         return {
             modal: null,
             success: true,
-            tele: '0999999999',
+            tele: '0982.93.97.79',
             showModal: true,
             mailParams: {},
             services: [

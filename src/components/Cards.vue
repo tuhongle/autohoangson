@@ -15,11 +15,11 @@
               spaceBetween: 20,
             },
             '992': {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 30,
             },
             '1024': {
-              slidesPerView: 5,
+              slidesPerView: 4,
               spaceBetween: 30,
             },
           }"
@@ -58,7 +58,6 @@ import card1 from '../assets/cards/card-1.jpg'
 import card2 from '../assets/cards/card-2.jpg'
 import card3 from '../assets/cards/card-3.jpg'
 import card4 from '../assets/cards/card-4.jpg'
-import card5 from '../assets/cards/card-5.jpg'
 
 export default {
   components: {
@@ -76,9 +75,8 @@ export default {
       cards: [
         {src: card1, alt: "1", title: "ĐỒNG SƠN", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?"},
         {src: card2, alt: "2", title: "DETAILING", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?"},
-        {src: card3, alt: "3", title: "MÁY GẦM", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?"},
-        {src: card4, alt: "4", title: "ĐIỆN ÔTÔ", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?"},
-        {src: card5, alt: "5", title: "ĐỒ CHƠI", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?"},
+        {src: card3, alt: "3", title: "MÁY GẦM ĐIỆN", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?"},
+        {src: card4, alt: "4", title: "ĐỒ CHƠI", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore odio vel. Aliquid, perferendis suscipit?"},
       ],
     }
   }

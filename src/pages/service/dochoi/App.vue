@@ -17,12 +17,12 @@
 </template>
 
 <script setup>
-import Navbar from '../../components/Navbar.vue'
-import Footer from '../../components/Footer.vue'
-import Background from '../../components/Background.vue'
-import Plugins from '../../components/Plugins.vue'
+import Navbar from '../../../components/Navbar.vue'
+import Footer from '../../../components/Footer.vue'
+import Background from '../../../components/Background.vue'
+import Plugins from '../../../components/Plugins.vue'
 
-const backgroundText = "Dịch vụ";
+const backgroundText = "Đồ chơi Ôtô";
 
 </script>
 

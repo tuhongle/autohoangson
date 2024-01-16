@@ -26,11 +26,10 @@
                 <i class="bi bi-chevron-down ms-md-0 ps-md-2 ms-auto"></i>
               </a>
               <div class="dropdown-menu bg-dark-subtle text-light pb-2 pt-0 py-md-0 px-3 px-md-0 text-start text-md-center">
-                <a href="/dich-vu.html" class="dropdown-item py-2 border-bottom border-1 border-dark-subtle">ĐỒNG SƠN</a>
-                <a href="" class="dropdown-item py-2 border-bottom border-1 border-dark-subtle">DETAILING</a>
-                <a href="" class="dropdown-item py-2 border-bottom border-1 border-dark-subtle">MÁY GẦM</a>
-                <a href="" class="dropdown-item py-2 border-bottom border-1 border-dark-subtle">ĐIỆN ÔTÔ</a>
-                <a href="" class="dropdown-item py-2 border-bottom border-1 border-dark-subtle">ĐỒ CHƠI</a>
+                <a href="/dich-vu/dong-son-oto.html" class="dropdown-item py-2 border-bottom border-1 border-dark-subtle">ĐỒNG SƠN</a>
+                <a href="/dich-vu/detailing-oto.html" class="dropdown-item py-2 border-bottom border-1 border-dark-subtle">DETAILING</a>
+                <a href="/dich-vu/may-gam-dien-oto.html" class="dropdown-item py-2 border-bottom border-1 border-dark-subtle">MÁY GẦM ĐIỆN ÔTÔ</a>
+                <a href="/dich-vu/do-choi-oto.html" class="dropdown-item py-2 border-bottom border-1 border-dark-subtle">ĐỒ CHƠI</a>
               </div>
             </li>
             <li class="nav-item me-2">

@@ -122,8 +122,8 @@ export default {
         {src: icon4, alt: 'icon 4', title: 'UY TÍN - CHẤT LƯỢNG', text: 'Giá cả hợp lý'},
       ],
       garages: [
-        {src: garage1, alt: 'garage 1', id: 1, address: '08 Bùi Công Trừng - Đông Thạnh - Hóc Môn - HCM', phone: '0999999999', mail: 'cvdv@autohoangson.com'},
-        {src: garage2, alt: 'garage 2', id: 2, address: '20/1A đường số 21 - P.8 - Gò vấp - TP HCM', phone: '0999999999', mail: 'cvdv@autohoangson.com'},
+        {src: garage1, alt: 'garage 1', id: 1, address: '08 Bùi Công Trừng - Đông Thạnh - Hóc Môn - HCM', phone: '0943876161', mail: 'cvdv@autohoangson.com'},
+        {src: garage2, alt: 'garage 2', id: 2, address: '20/1A đường số 21 - P.8 - Gò vấp - TP HCM', phone: '0844772020', mail: 'cvdv@autohoangson.com'},
       ]
     }
   }

@@ -44,7 +44,7 @@
                 <ul class="list-unstyled">
                   <li class="small card-text border border-1 border-secondary d-flex align-items-center">
                     <i class="bi bi-telephone-fill fs-5 me-1 px-4 d-flex align-items-center justify-content-center"></i>
-                    <div class="ps-3 d-inline-block py-3">0999999999</div>
+                    <div class="ps-3 d-inline-block py-3">0982.93.97.79</div>
                   </li>
                   <li class="small card-text border border-1 border-secondary d-flex align-items-center">
                     <i class="bi bi-envelope-fill fs-5 me-1 px-4 d-flex align-items-center justify-content-center"></i>
@@ -56,7 +56,7 @@
                   </li>
                   <li class="small card-text border border-1 border-secondary d-flex align-items-center">
                     <i class="bi bi-browser-chrome fs-5 me-1 px-4 d-flex align-items-center justify-content-center"></i>
-                    <div class="ps-3 d-inline-block"><a href="#index.html" class="text-light text-decoration-none">autohoangson.com</a></div>
+                    <div class="ps-3 d-inline-block"><a href="https://www.autohoangson.com" class="text-light text-decoration-none">autohoangson.com</a></div>
                   </li>
                 </ul>
               </div>
