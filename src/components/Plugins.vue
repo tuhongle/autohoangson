@@ -59,7 +59,7 @@ export default {
   name: 'Plugins',
   data() {
     return {
-      phoneNumber: '+84372452970',
+      phoneNumber: '+84982939779',
     }
   },
   mounted() {

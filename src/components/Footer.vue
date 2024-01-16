@@ -5,11 +5,10 @@
             <div class="col-content text-light p-4 h-100">
                 <h3 class="mb-4">DỊCH VỤ</h3>
                 <div class="content">
-                    <a href="" class="d-block text-decoration-none border-bottom border-1 border-secondary mb-3 pb-2">Đồng sơn</a>
-                    <a href="" class="d-block text-decoration-none border-bottom border-1 border-secondary mb-3 pb-2">Detailing</a>
-                    <a href="" class="d-block text-decoration-none border-bottom border-1 border-secondary mb-3 pb-2">Khung gầm</a>
-                    <a href="" class="d-block text-decoration-none border-bottom border-1 border-secondary mb-3 pb-2">Điện máy</a>
-                    <a href="" class="d-block text-decoration-none border-bottom border-1 border-secondary mb-3 pb-2">Đồ chơi</a>
+                    <a href="/dich-vu/dong-son-oto.html" class="d-block text-decoration-none border-bottom border-1 border-secondary mb-3 pb-2">Đồng sơn</a>
+                    <a href="/dich-vu/detailing-oto.html" class="d-block text-decoration-none border-bottom border-1 border-secondary mb-3 pb-2">Detailing</a>
+                    <a href="/dich-vu/may-gam-dien-oto.html" class="d-block text-decoration-none border-bottom border-1 border-secondary mb-3 pb-2">Máy gầm điện ôtô</a>
+                    <a href="/dich-vu/do-choi-oto.html" class="d-block text-decoration-none border-bottom border-1 border-secondary mb-3 pb-2">Đồ chơi</a>
                 </div>
             </div>
         </div>

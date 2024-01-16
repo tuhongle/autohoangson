@@ -19,22 +19,22 @@
 </template>
 
 <script>
-import dongson from '../assets/carousel/dong-son.jpg'
-import detailing from '../assets/carousel/detailing.jpg'
-import khunggam from '../assets/carousel/khung-gam.jpg'
-import dienmay from '../assets/carousel/dien-may.jpg'
-import dochoi from '../assets/carousel/do-choi.jpg'
+import hinhbia from '../assets/carousel/hinh-bia.png'
+import hinhson from '../assets/carousel/hinh-son.png'
+import baoduong from '../assets/carousel/bao-duong.png'
+import baohiem from '../assets/carousel/insurance.png'
+import diachi from '../assets/carousel/dia-chi.png'
 
 export default {
     name: "Carousel",
     data() {
         return {
             images: [
-                {src: dongson, alt: 'hình ảnh Đồng Sơn', active: true},
-                {src: detailing, alt: 'hình ảnh Detailing', active: false},
-                {src: khunggam, alt: 'hình ảnh Khung gầm', active: false},
-                {src: dienmay, alt: 'hình ảnh Điện máy', active: false},
-                {src: dochoi, alt: 'hình ảnh Đồ chơi', active: false},
+                {src: hinhbia, alt: 'hình bìa', active: true},
+                {src: hinhson, alt: 'hình sơn', active: false},
+                {src: baoduong, alt: 'hình bảo dưỡng', active: false},
+                {src: baohiem, alt: 'hình bảo hiểm', active: false},
+                {src: diachi, alt: 'hình địa chỉ', active: false},
             ]
         }
     },

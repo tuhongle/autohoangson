@@ -11,9 +11,9 @@
     </section>
     <section class="main-content">
       <div class="container-lg pb-5">
-        <figure class="text-center mb-4">
-          <img class="img-fluid" src="../../assets/main/insurance.png" alt="hình bảo hiểm">
-          <figcaption class="h6 text-center fst-italic mt-4 lh-base px-5">"Auto Hoàng Sơn cam kết sẽ tư vấn cho khách hàng sản phẩm bảo hiểm tốt nhất phù hợp với mục đích sử dụng. Hổ trợ khách hàng khi xảy ra sự cố, đồng thời hoàn thiện thủ tục nhanh chóng giúp khách hàng tiết kiệm thời gian."</figcaption>
+        <figure class="figure text-center mb-4">
+          <img class="figure-img img-fluid rounded" src="../../assets/main/insurance.png" alt="hình bảo hiểm">
+          <figcaption class=" figure-caption h6 text-center fst-italic mt-4 lh-base px-5">"Auto Hoàng Sơn cam kết sẽ tư vấn cho khách hàng sản phẩm bảo hiểm tốt nhất phù hợp với mục đích sử dụng. Hổ trợ khách hàng khi xảy ra sự cố, đồng thời hoàn thiện thủ tục nhanh chóng giúp khách hàng tiết kiệm thời gian."</figcaption>
         </figure>
         <h3 class="text-danger text-center">10 ĐIỀU CẦN BIẾT VỀ BẢO HIỂM XE Ô TÔ</h3>
         <ol>
@@ -72,9 +72,9 @@
             <b class="mb-2 d-block">Hiểu rõ quyền lợi và trách nhiệm của mình khi ký hợp đồng bảo hiểm.</b>
           </li>
         </ol>
-        <figure class="lh-base">
-          <figcaption class="h6 text-center fst-italic mt-4">"Auto Hoàng Sơn cam kết sẽ tư vấn cho khách hàng sản phẩm bảo hiểm tốt nhất phù hợp với mục đích sử dụng. Hổ trợ khách hàng khi xảy ra sự cố, đồng thời hoàn thiện thủ tục nhanh chống giúp khách hàng tiết kiệm thời gian."</figcaption>
-        </figure>
+        <blockquote class="blockquote">
+          <p class="h6 text-center fst-italic mt-4">"Auto Hoàng Sơn cam kết sẽ tư vấn cho khách hàng sản phẩm bảo hiểm tốt nhất phù hợp với mục đích sử dụng. Hổ trợ khách hàng khi xảy ra sự cố, đồng thời hoàn thiện thủ tục nhanh chống giúp khách hàng tiết kiệm thời gian."</p>
+        </blockquote>
       </div>
     </section>
 

@@ -1,7 +1,7 @@
 <template>
   <Navbar />
   <main>
-    <section class="hero-images py-5">
+    <section class="hero-images pb-5" style="margin-top: 100px !important;">
       <Carousel />
     </section>
     <section class="cards py-5">
@@ -9,7 +9,7 @@
     </section>
     <section class="caption">
       <div class="container-lg p-5">
-        <blockquote class="text-center fst-italic mb-5">
+        <blockquote class="text-center fst-italic mb-5 text-primary">
           <h1 class="mb-3"><i class="bi bi-quote"></i>CHĂM XE BẰNG TÂM</h1>
           <h1>DỊCH VỤ XỨNG TẦM<i class="bi bi-quote"></i></h1>
         </blockquote>
@@ -28,7 +28,7 @@
     </section>
     <section class="garage">
       <div class="container-lg p-5 text-center">
-        <h1 class="mb-5">HỆ THỐNG GARAGE</h1>
+        <h1 class="mb-5 text-primary">HỆ THỐNG GARAGE</h1>
         <div class="row">
           <div class="col-12 col-lg-6 mb-4 mb-lg-0" v-for="garage in garages" :key="garage.id">
             <div class="row h-100 border-1 border-bottom mx-2 pb-2">
@@ -64,15 +64,15 @@
             <button class="btn btn-light border-0 me-3"><a href="/insurance.html" class="text-decoration-none text-dark">XEM THÊM</a></button>
             <button class="btn btn-light border-0"><a href="/contact.html" class="text-decoration-none text-dark">LIÊN HỆ</a></button>
           </div>
-          <div class="col-12 col-md-6">
-            <img src="../../assets/background/background-1.jpg" alt="" class="img-fluid">
+          <div class="col-12 col-md-6 d-flex">
+            <img :src="insurance" alt="hình tư vấn bảo hiểm" class="d-block img-fluid rounded my-auto" style="filter: drop-shadow(5px 10px 10px black);">
           </div>
         </div>
       </div>
     </section>
     <section class="customers">
       <div class="container py-5 text-center">
-      <h1 class="mb-5">ĐỐI TÁC - BẢO HIỂM LIÊN KIẾT</h1>
+      <h1 class="mb-5 text-primary">ĐỐI TÁC - BẢO HIỂM LIÊN KIẾT</h1>
       <CustomerLogos />
       </div>
     </section>
@@ -108,6 +108,8 @@ import icon3 from '../../assets/iconsCaption/icon-3.png'
 import garage1 from '../../assets/garages/garage-1.jpg'
 import garage2 from '../../assets/garages/garage-2.jpg'
 
+import insurance from '../../assets/main/insurance.png'
+
 export default {
   name: 'App',
   components: {
@@ -124,7 +126,8 @@ export default {
       garages: [
         {src: garage1, alt: 'garage 1', id: 1, address: '08 Bùi Công Trừng - Đông Thạnh - Hóc Môn - HCM', phone: '0943876161', mail: 'cvdv@autohoangson.com'},
         {src: garage2, alt: 'garage 2', id: 2, address: '20/1A đường số 21 - P.8 - Gò vấp - TP HCM', phone: '0844772020', mail: 'cvdv@autohoangson.com'},
-      ]
+      ],
+      insurance,
     }
   }
 }
