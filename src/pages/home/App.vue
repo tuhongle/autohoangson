@@ -58,14 +58,32 @@
     <section class="insurance">
       <div class="container-lg p-5 text-start text-light">
         <div class="row">
-          <div class="col-12 col-md-6 mb-3 mb-md-0">
-            <h2 class="fw-bold">TƯ VẤN BẢO HIỂM</h2>
-            <p class="lh-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae numquam nisi alias quidem, voluptatum unde. Excepturi voluptates culpa iusto, ullam ipsum at a cumque ad ab voluptate aut rem suscipit eveniet molestiae nostrum provident, sit dolor quam quod ratione tempora. Corrupti minima sunt dicta totam. Vitae dignissimos veritatis similique temporibus ad nostrum accusantium hic debitis ducimus fuga sunt possimus ullam quo, corporis dolorum optio. Dolor, expedita amet? Assumenda nemo quod fuga nihil, eius molestiae adipisci commodi incidunt id. Accusamus ab consequuntur quasi autem dolore in eius eligendi dolorem, tempore pariatur blanditiis! Similique cupiditate accusamus fugit architecto provident error aspernatur vitae!</p>
-            <button class="btn btn-light border-0 me-3"><a href="/insurance.html" class="text-decoration-none text-dark">XEM THÊM</a></button>
-            <button class="btn btn-light border-0"><a href="/contact.html" class="text-decoration-none text-dark">LIÊN HỆ</a></button>
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <h2 class="fw-bold shadow-lg">TƯ VẤN BẢO HIỂM</h2>
+            <p class="lh-lg"><b>Auto Hoàng Sơn</b> là đơn vị đã được hầu hết các công ty bảo hiểm ô tô Việt Nam tin tưởng ủy quyền sửa chữa đền bù tổn thất. Với kinh nghiệm làm việc với nhiều công ty bảo hiểm chúng tôi tin rằng sẽ tư vấn cho khách hàng sản phẩm bảo hiểm phù hợp nhất theo nhu cầu , đặc thù công việc và thói quen sử dụng.</p>
+            <h5 class="mb-3 fw-bold">Lợi thế cho khách hàng khi mua bảo hiểm tại Auto Hoàng Sơn:</h5>
+            <ul>
+              <li class="mb-2">Được tư vấn lựa chọn sản phẩm tốt nhất cho khách hàng.</li>
+              <li class="mb-2">Được hỗ trợ làm hồ sơ</li>
+              <li class="mb-2">Được tư vấn hỗ trợ khi xẩy ra sự cố, đảm bảo quyền lợi cao nhất cho khách hàng.</li>
+              <li class="mb-2">Hướng dẫn khách hàng làm hồ sơ bồi thường tổn thất.</li>
+              <li class="mb-2">Được hỗ trợ chi phí giảm trừ, khấu trừ khi xẩy ra tổn thất</li>
+              <li class="mb-2">........</li>
+            </ul>
+            <p class="lh-lg">Ngoài ra tùy vào từng thời điểm mà <span class="fw-bold">Auto Hoàng Sơn</span> luôn có chương trình <u>khuyến mãi</u>, <u>giảm giá</u> cho khách hàng khi mua bảo hiểm.</p>
+            <div class="hotline d-flex mb-3">
+              <p class="fw-bold me-3 text-danger">Hotline:</p>
+              <div class="contact">
+                <p>0982 93 97 79 - 0943 87 61 61 ( CS1 )</p>
+                <p>0844 77 20 20 - 0947 03 32 32 ( CS2 )</p>
+              </div>
+            </div>
+            <button class="btn btn-light px-3 py-2 border-0 me-3"><a href="/insurance.html" class="text-decoration-none text-dark">XEM THÊM</a></button>
+            <button class="btn btn-light px-3 py-2 border-0"><a href="/contact.html" class="text-decoration-none text-dark">LIÊN HỆ</a></button>
           </div>
-          <div class="col-12 col-md-6 d-flex">
+          <div class="col-12 col-md-6 d-flex flex-column">
             <img :src="insurance" alt="hình tư vấn bảo hiểm" class="d-block img-fluid rounded my-auto" style="filter: drop-shadow(5px 10px 10px black);">
+            <img :src="info" alt="hình địa chỉ" class="d-none d-md-block img-fluid rounded my-auto" style="filter: drop-shadow(5px 10px 10px rgba(128, 128, 128, 0.3));">
           </div>
         </div>
       </div>
@@ -109,6 +127,7 @@ import garage1 from '../../assets/garages/garage-1.jpg'
 import garage2 from '../../assets/garages/garage-2.jpg'
 
 import insurance from '../../assets/main/insurance.png'
+import info from '../../assets/main/info.png'
 
 export default {
   name: 'App',
@@ -128,6 +147,7 @@ export default {
         {src: garage2, alt: 'garage 2', id: 2, address: '20/1A đường số 21 - P.8 - Gò vấp - TP HCM', phone: '0844772020', mail: 'cvdv@autohoangson.com'},
       ],
       insurance,
+      info,
     }
   }
 }

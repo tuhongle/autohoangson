@@ -54,8 +54,8 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper';
-import card1 from '../assets/cards/card-1.png'
-import card2 from '../assets/cards/card-2.png'
+import card1 from '../assets/cards/card-1.jpg'
+import card2 from '../assets/cards/card-2.jpg'
 import card3 from '../assets/cards/card-3.jpg'
 import card4 from '../assets/cards/card-4.jpg'
 
