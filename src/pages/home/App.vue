@@ -78,7 +78,7 @@
                 <p>0844 77 20 20 - 0947 03 32 32 ( CS2 )</p>
               </div>
             </div>
-            <button class="btn btn-light px-3 py-2 border-0 me-3"><a href="/insurance.html" class="text-decoration-none text-dark">XEM THÊM</a></button>
+            <button class="btn btn-light px-3 py-2 border-0 me-3"><a href="/bao-hiem.html" class="text-decoration-none text-dark">XEM THÊM</a></button>
             <button class="btn btn-light px-3 py-2 border-0"><a href="/contact.html" class="text-decoration-none text-dark">LIÊN HỆ</a></button>
           </div>
           <div class="col-12 col-md-6 d-flex flex-column">

@@ -33,7 +33,7 @@
               </div>
             </li>
             <li class="nav-item me-2">
-              <a href="/insurance.html" class="nav-link px-3 py-3">BẢO HIỂM</a>
+              <a href="/bao-hiem.html" class="nav-link px-3 py-3">BẢO HIỂM</a>
             </li>
             <li class="nav-item me-2">
               <a href="/tuyen-dung.html" class="nav-link px-3 py-3">TUYỂN DỤNG</a>

@@ -10,7 +10,7 @@
       </div>
     </section>
     <section class="content">
-      <div class="container-lg pb-5 my-5">
+      <div class="container-lg mb-5">
         <div class="row">
           <div class="col-12 col-lg-8">
             <figure class="figure text-center mb-4">
