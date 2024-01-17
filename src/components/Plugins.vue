@@ -15,7 +15,7 @@
             <div class="hotline-phone-ring-circle"></div>
             <div class="hotline-phone-ring-circle-fill"></div>
             <div class="hotline-phone-ring-img-circle">
-              <a :href="'tel:' + phoneNumber" class="pps-btn-img">
+              <a :href="'tel:' + callNumber" class="pps-btn-img">
                 <i class="bi bi-telephone-fill text-light"></i>
               </a>
             </div>
@@ -59,12 +59,13 @@ export default {
   name: 'Plugins',
   data() {
     return {
-      phoneNumber: '+84982939779',
+      callNumber: '+84982939779',
+      phoneNumber: '+84943876161',
     }
   },
   mounted() {
     this.changeLinkZalo();
-    this.$refs.fbCustomerChat.setAttribute("page_id", "1492485087495500");
+    this.$refs.fbCustomerChat.setAttribute("page_id", "104042625597581");
     this.$refs.fbCustomerChat.setAttribute("attribution", "biz_inbox");
     window.fbAsyncInit = function() {
     window.FB.init({

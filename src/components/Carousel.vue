@@ -40,3 +40,12 @@ export default {
     },
 }
 </script>
+
+<style scoped>
+img {
+    /* border:2px solid #fff; */
+    -moz-box-shadow: 5px 10px 5px #000;
+    -webkit-box-shadow: 5px 10px 5px #000;
+    box-shadow: 5px 10px 5px #000;
+}
+</style>

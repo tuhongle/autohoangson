@@ -4,6 +4,11 @@
     <section class="background">
       <Background :background="backgroundText" />
     </section>
+    <section class="content">
+      <div class="container-lg my-3 my-md-5">
+        <img :src="recruit" alt="hình tuyển dụng" class="img-fluid rounded">
+      </div>
+    </section>
 
   </main>
   <!-- Plugins -->
@@ -16,23 +21,16 @@
   </footer>
 </template>
 
-<script>
+<script setup>
 import Navbar from '../../components/Navbar.vue'
 import Footer from '../../components/Footer.vue'
 import Background from '../../components/Background.vue'
 import Plugins from '../../components/Plugins.vue'
 
-export default {
-  name: 'App',
-  components: {
-    Navbar, Footer, Background, Plugins
-  },
-  data() {
-    return {
-      backgroundText: "Tuyển dụng",
-    }
-  }
-}
+import recruit from '../../assets/main/recruit.jpg'
+
+const backgroundText = "Tuyển dụng";
+
 </script>
 
 <style>
