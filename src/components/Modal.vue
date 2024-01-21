@@ -7,6 +7,21 @@
         <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
+        <div id="promotionImages" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- <div class="carousel-item" data-bs-interval="2000" :class="{'active': image.active}" v-for="image in images" :key="image.src">
+                    <img :src="image.src" class="d-block w-100" :alt="image.alt">
+                </div> -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroImage" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroImage" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <form @submit.prevent="sendEmail">
             <h5 class="mt-4">1. Dịch vụ cho xe (*)</h5>
             <p class="fst-italic ms-4">Có thể chọn nhiều phương án</p>
@@ -86,6 +101,7 @@ export default {
                 {id: "may-gam", label: "Máy gầm"},
                 {id: "dien-oto", label: "Điện ôtô"},
                 {id: "do-choi", label: "Đồ chơi"},
+                {id: "bao-hiem", label: "Bảo hiểm"},
             ],
             selectedServices: [],
             name: '',

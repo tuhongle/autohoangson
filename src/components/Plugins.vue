@@ -42,11 +42,12 @@
       </div>
       <!-- Messenger plugin -->
       <div class="row mb-2">
-        <!-- Messenger Chat Plugin Code -->
-        <div id="fb-root"></div>
-
-        <!-- Your Chat Plugin code -->
-        <div id="fb-customer-chat" ref="fbCustomerChat" class="fb-customerchat">
+        <div class="fb-like">
+          <!-- Messenger Chat Plugin Code -->
+          <div id="fb-root"></div>
+          <!-- Your Chat Plugin code -->
+          <div id="fb-customer-chat" ref="fbCustomerChat" class="fb-customerchat">
+        </div>
         </div>
       </div>
   </div>
