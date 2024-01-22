@@ -147,9 +147,7 @@ export default {
         },
         async fetchBanners() {
             try {
-                const response = await fetch("https://www.autohoangson.com/img/banners/", {
-                    mode: 'no-cors',
-                });
+                const response = await fetch("https://www.autohoangson.com/img/banners/");
                 const jsonResponse = await response.json();
                 return jsonResponse;
             }
