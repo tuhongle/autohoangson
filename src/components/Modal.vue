@@ -9,15 +9,15 @@
       <div class="modal-body">
         <div id="promotionImages" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <!-- <div class="carousel-item" data-bs-interval="2000" :class="{'active': image.active}" v-for="image in images" :key="image.src">
-                    <img :src="image.src" class="d-block w-100" :alt="image.alt">
-                </div> -->
+                <div class="carousel-item" data-bs-interval="2000" :class="{'active': index === 1}" v-for="(image, index) in imageArray" :key="index">
+                    <img :src="'https://autohoangson.com/img/banners/'+image" class="d-block w-100" alt="hình Promotion Banner">
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroImage" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#promotionImages" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroImage" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#promotionImages" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -82,7 +82,7 @@
 </div>
 </template>
 
-<script>
+<script >
 import * as bootstrap from 'bootstrap'
 import emailjs from '@emailjs/browser';
 
@@ -110,12 +110,14 @@ export default {
             date: '',
             message: '',
             serviceType: 'bảo hiểm',
+            imageArray: null,
         }
     },
-    mounted() {
+    async mounted() {
         this.modal = new bootstrap.Modal('#register');
         this.modal.show();
         this.success = false;
+        this.imageArray = await this.fetchBanners();
     },
     methods: {
         sendEmail() {
@@ -139,13 +141,22 @@ export default {
                     this.serviceType = 'bảo hiểm';
                     this.message = '';
                     console.log('SUCCESS!', response.status, response.text);
-                    // setTimeout(() => {
-                    //     this.modal.hide();
-                    // }, 3000);
                 }, (err) => {
                     console.log('FAILED...', err);
                 });
+        },
+        async fetchBanners() {
+            try {
+                const response = await fetch("https://www.autohoangson.com/img/banners/", {
+                    mode: 'no-cors',
+                });
+                const jsonResponse = await response.json();
+                return jsonResponse;
+            }
+            catch (error) {
+                console.log(error);
+            }
         }
-    }
+    },
 }
 </script>
