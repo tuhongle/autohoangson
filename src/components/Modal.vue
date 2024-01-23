@@ -22,6 +22,21 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <div id="WWWpromotionImages" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item" data-bs-interval="2000" :class="{'active': index === 1}" v-for="(image, index) in imageWWWArray" :key="index">
+                    <img :src="'https://www.autohoangson.com/img/banners/'+image" class="d-block w-100" alt="hình Promotion Banner">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#WWWpromotionImages" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#WWWpromotionImages" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <form @submit.prevent="sendEmail">
             <h5 class="mt-4">1. Dịch vụ cho xe (*)</h5>
             <p class="fst-italic ms-4">Có thể chọn nhiều phương án</p>
@@ -110,6 +125,7 @@ export default {
             date: '',
             message: '',
             serviceType: 'bảo hiểm',
+            imageWWWArray: null,
             imageArray: null,
         }
     },
@@ -117,6 +133,7 @@ export default {
         this.modal = new bootstrap.Modal('#register');
         this.modal.show();
         this.success = false;
+        this.imageWWWArray = await this.fetchWWWBanners();
         this.imageArray = await this.fetchBanners();
     },
     methods: {
@@ -145,9 +162,19 @@ export default {
                     console.log('FAILED...', err);
                 });
         },
-        async fetchBanners() {
+        async fetchWWWBanners() {
             try {
                 const response = await fetch("https://www.autohoangson.com/img/banners/");
+                const jsonResponse = await response.json();
+                return jsonResponse;
+            }
+            catch (error) {
+                console.log(error);
+            }
+        },
+        async fetchBanners() {
+            try {
+                const response = await fetch("https://autohoangson.com/img/banners/");
                 const jsonResponse = await response.json();
                 return jsonResponse;
             }
