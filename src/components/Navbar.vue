@@ -4,7 +4,7 @@
       <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a href="#" class="navbar-brand mx-auto ms-md-start">
+      <a href="/index.html" class="navbar-brand mx-auto ms-md-start">
           <img src="../assets/logo-autohoangson.png" alt="logo-autohoangson" class="img-fluid" width="100">
       </a>
       <div class="offcanvas offcanvas-start bg-dark-subtle" tabindex="-1" id="navbarMenu" aria-labelledby="navbarMenuLabel">
