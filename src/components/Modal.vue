@@ -7,7 +7,7 @@
         <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div id="promotionImages" class="carousel slide" data-bs-ride="carousel">
+        <div id="promotionImages" class="carousel slide" data-bs-ride="carousel" v-if="imageArray">
             <div class="carousel-inner">
                 <div class="carousel-item" data-bs-interval="2000" :class="{'active': index === 1}" v-for="(image, index) in imageArray" :key="index">
                     <img :src="'https://autohoangson.com/img/banners/'+image" class="d-block w-100" alt="hình Promotion Banner">
@@ -22,7 +22,7 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div id="WWWpromotionImages" class="carousel slide" data-bs-ride="carousel">
+        <div id="WWWpromotionImages" class="carousel slide" data-bs-ride="carousel" v-if="imageWWWArray">
             <div class="carousel-inner">
                 <div class="carousel-item" data-bs-interval="2000" :class="{'active': index === 1}" v-for="(image, index) in imageWWWArray" :key="index">
                     <img :src="'https://www.autohoangson.com/img/banners/'+image" class="d-block w-100" alt="hình Promotion Banner">
